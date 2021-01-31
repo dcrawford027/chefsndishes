@@ -24,6 +24,7 @@ namespace ChefsNDishes.Models
         public DateTime CreatedAt {get;set;} = DateTime.Now;
         public DateTime UpdatedAt {get;set;} = DateTime.Now;
 
+    // Navigation Properties
         public List<Dish> CreatedDishes {get;set;}
     }
 }

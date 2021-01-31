@@ -25,9 +25,11 @@ namespace ChefsNDishes.Models
         public DateTime CreatedAt {get;set;} = DateTime.Now;
         public DateTime UpdatedAt {get;set;} = DateTime.Now;
 
+        // Foreign Keys
         [Required]
         public int ChefId {get;set;}
 
+        // Navigation Properties
         public Chef Creator {get;set;}
     }
 }
